@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="index.js"></script>
+	<link rel="stylesheet" href="styles.css" />
+	<title>Raphael BOSE</title>
+</head>
+
+
+<body id="body">
+
+	<div class="container">
+		<div class="left-container">
+			<h4> <u> UVC DEVICES DETAILS CONNECTED </u> </h4>
+			<div id="video_box">
+				<div>
+					<p> <b>DeviceName:</b><span id="uvcDevice"></span></p>
+					<!-- <p> <b>DevicePath:</b><span id="uvcDevicePath"></span></p> -->
+					<p> <b>DeviceID:</b><span id="uvcDeviceId"></span></p>
+				</div>
+				<video id="test" height="50%" width="50%" autoplay></video>
+				<div id="video_overlays">
+					<button onclick="playVideo()" class="top">Play</button>
+					<button onclick="pauseVideo()">Pause</button>
+					<!-- <button onclick="uvcControlDevice()">UVC Control</button> -->
+				</div>
+			</div>
+		</div>
+
+		<div class="right-container">
+			<h4> <u> HID DEVICES DETAILS CONNECTED </u> </h4>
+			<div>
+				<p> <b>DeviceName:</b><span id="hidDevice"></span></p>
+				<!-- <p> <b>DevicePath:</b><span id="hidDevicePath"></span></p> -->
+				<p> <b>DeviceID:</b><span id="hidDeviceId"></span></p>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

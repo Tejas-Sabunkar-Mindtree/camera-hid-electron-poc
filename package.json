@@ -1,0 +1,32 @@
+{
+  "name": "video-overlay-poc",
+  "version": "1.0.0",
+  "description": "Video Overlay in Electron using webcam devices to get the video inout and show some buttons on top for BOSE POC",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "electron-rebuild --force",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [
+    "BOSE",
+    "ELCTRON"
+  ],
+  "author": "Rajat Kaushik",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/node-hid": "^0.7.0",
+    "@types/puppeteer": "^1.12.3",
+    "brightness": "^3.0.0",
+    "node-hid": "^0.7.7",
+    "puppeteer": "^1.15.0",
+    "uvc-control": "^1.0.2"
+  },
+  "devDependencies": {
+    "electron": "^4.2.0",
+    "electron-builder": "^20.40.2",
+    "electron-rebuild": "^1.8.4"
+  }
+}
